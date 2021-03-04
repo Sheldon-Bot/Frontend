@@ -1,21 +1,22 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <Nuxt></Nuxt>
+    <main class="content-container">
+        <Nuxt></Nuxt>
+    </main>
   </div>
 </template>
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Source Sans Pro',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -31,5 +32,14 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.content-container {
+  background-color: #2b3c47;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
 }
 </style>

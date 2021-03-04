@@ -1,6 +1,9 @@
 <template>
   <div class="team">
-    <h2>Hello</h2>
+    <h1>Our Team</h1>
+    <br><hr><br>
+    <Member name="Mathew"></Member>
+    <Member name="Mathew"></Member>
   </div>
 </template>
 
@@ -11,11 +14,5 @@ export default {
 </script>
 
 <style scoped>
-.team {
-  background-color: #2b3c47;
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 </style>

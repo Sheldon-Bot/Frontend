@@ -1,8 +1,12 @@
 <template>
-  <div class="home">
+  <div>
     <h1>Sheldon Bot</h1>
     <br><hr><br>
     <img class="image" src ="~/assets/sheldonBotlogo.svg">
+    <div class="box">
+      <p class="initial">Our Goal</p>
+      <p class="initial">was to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in "The Big Bang Theory".</p>
+    </div>
   </div>
 </template>
 
@@ -28,16 +32,27 @@ export default {}
     border-radius: 2px;
     background-color: #35495e;
   }
-  .home {
-    background-color: #2b3c47;
-    width: 70%;
+  .image{
+    width: 20em;
+    padding-top: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .image{
-    width: 20em;
-    padding-top: 1em;
+  .box {
+    max-width: 75vh;
+    background-color: #559B81;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box:hover {
+  }
+  .initial {
+    max-width: 70vh;
+    padding: 1em;
+    background-color: #243742;
+    color: aliceblue;
     display: block;
     margin-left: auto;
     margin-right: auto;
