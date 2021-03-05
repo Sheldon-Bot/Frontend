@@ -2,7 +2,9 @@
   <div>
     <PageHeader title="Sheldon Bot" />
     <img class="image" src ="~/assets/sheldonBotlogo.svg">
-    <Goal></Goal>
+    <div class="goal-container">
+      <Goal class="goal"></Goal>
+    </div>
   </div>
 </template>
 
@@ -11,11 +13,20 @@ export default {}
 </script>
 
 <style>
-  .image{
+  .image {
     width: 20em;
     padding-top: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .goal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
   }
 </style>
