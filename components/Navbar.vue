@@ -1,14 +1,14 @@
 <template>
   <div class="nav">
     <NuxtLink to="/" class="link">Home</NuxtLink>
-    <NuxtLink to="/OurTeam" class="link">Our Team</NuxtLink>
+    <NuxtLink to="/team" class="link">Our Team</NuxtLink>
     <NuxtLink to="/login" class="link">Login</NuxtLink>
   </div>
 </template>
 
 <script>
 export default {
-name: "Navbar"
+  name: "Navbar",
 }
 </script>
 
@@ -26,5 +26,9 @@ name: "Navbar"
     text-decoration: none;
     color: aliceblue;
     font-size: 1.25em;
+  }
+
+  .link:hover {
+    color: #559B81;
   }
 </style>

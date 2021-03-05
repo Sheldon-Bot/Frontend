@@ -1,13 +1,21 @@
 <template>
-  <div>
+  <div class="layout-container">
     <Navbar></Navbar>
     <main class="content-container">
         <Nuxt></Nuxt>
     </main>
+    <Footer></Footer>
   </div>
 </template>
 
 <style>
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 html {
   font-family: 'Source Sans Pro',
   -apple-system,
@@ -37,9 +45,10 @@ html {
 .content-container {
   background-color: #2b3c47;
   width: 70%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   min-height: 100%;
+  flex-grow: 1;
+  justify-self: center;
 }
 </style>
