@@ -6,9 +6,9 @@
       <img class="image" src ="~/assets/sheldonBotlogo.svg">
       <Goal class="goal"></Goal>
     </div>
-    <div class="our-story-container">
-      <img class="image" src ="~/assets/Untitled-1.png">
-      <OurStory class="our-story"></OurStory>
+    <div class="background-container">
+      <img class="image" src ="~/assets/Background.png">
+      <Background class="background"></Background>
     </div>
 
   </div>
@@ -33,7 +33,7 @@ export default {}
   justify-content: center;
   padding-bottom: 3em;
 }
-  .our-story-container{
+  .background-container{
     width: 100%;
     display: flex;
     flex-direction: row;
