@@ -1,7 +1,11 @@
 <template>
-  <div class="portrait">
-    <h1>{{ name }}</h1>
-    <img class="portrait-tag" src="~/assets/MathewBorg.jpg">
+  <div class="portrait-container">
+    <img class="portrait" :src="image">
+    <div class="text-container">
+      <p class="text name">{{name}}</p>
+      <p class="text role">{{role}}</p>
+    </div>
+    <div ref="dropdown-container" class="dropdown-container"></div>
   </div>
 </template>
 
