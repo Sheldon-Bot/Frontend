@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <br><hr><br>
+    <hr>
   </div>
 </template>
 
@@ -27,8 +27,7 @@ export default {
   hr {
     width: 60%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.5em auto;
     border: none;
     height: 3px;
     border-radius: 2px;

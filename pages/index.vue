@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <PageHeader title="Sheldon Bot" />
+  <div class="page-container">
+    <PageHeader title="Sheldon Bot"/>
     <img class="image" src ="~/assets/sheldonBotlogo.svg">
     <div class="goal-container">
       <Goal class="goal"></Goal>
@@ -15,7 +15,7 @@ export default {}
 <style>
   .image {
     width: 20em;
-    padding-top: 1em;
+    padding: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
