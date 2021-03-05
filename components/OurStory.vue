@@ -1,16 +1,15 @@
 <template>
   <div class="box">
     <div class="text-container">
-      <h1 class="title">The Goal</h1>
-      <p class="text">We set out to build a robot that would allow for students online to have a physical presence
-        within the classroom. It was roughly inspired by the robot made by Sheldon in "The Big Bang Theory".</p>
+      <h1 class="title">Our Story</h1>
+      <p class="text">We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in "The Big Bang Theory".</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Goal",
+  name: "OurStory"
 }
 </script>
 
@@ -19,13 +18,15 @@ export default {
   max-width: 60%;
   background-color: #559B81;
 }
+
 .text-container {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: #243742;
   color: aliceblue;
   padding: 0.3em 1em;
 }
+
 .title {
   font-style: italic;
   margin-top: 0.1em;
