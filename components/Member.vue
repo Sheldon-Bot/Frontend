@@ -12,7 +12,10 @@ name: "Member"
 </script>
 
 <style scoped>
-  .potraits {
+  h1 {
+    color: chocolate;
+  }
+  .portrait {
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -3,7 +3,7 @@
     <h1>Our Team</h1>
     <br><hr><br>
     <Member name="Mathew"></Member>
-    <Member name="Mathew"></Member>
+    <Member name="Mason"></Member>
   </div>
 </template>
 
