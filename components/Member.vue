@@ -1,7 +1,7 @@
 <template>
-  <div class="potraits">
-    <h1>{{name}}</h1>
-    <img class="portait-tag" src="~/assets/MathewBorg.jpg">
+  <div class="portrait">
+    <h1>{{ name }}</h1>
+    <img class="portrait-tag" src="~/assets/MathewBorg.jpg">
   </div>
 </template>
 
