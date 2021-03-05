@@ -17,7 +17,7 @@ name: "Member"
     flex-direction: row;
     justify-content: center;
   }
-  .portait-tag{
+  .portrait-tag {
     width: 20em;
     padding: 1em;
   }
