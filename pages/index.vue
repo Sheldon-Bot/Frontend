@@ -42,7 +42,7 @@ export default {}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3em;
+  padding-bottom: 0.5em;
 }
 .background-container{
   width: 100%;
@@ -50,9 +50,8 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3em;
   flex-wrap: wrap;
-  padding: 3em;
+  padding-bottom: 0.5em;
 }
 
 .story-container{
@@ -61,9 +60,7 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3em;
   flex-wrap: wrap;
-  padding: 3em;
 }
 
 .final-container {
