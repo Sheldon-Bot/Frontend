@@ -1,15 +1,25 @@
 <template>
   <div class="box">
     <div class="text-container">
-      <h1 class="title">Our Story</h1>
-      <p class="text">We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in "The Big Bang Theory".</p>
+      <h1 class="title">{{title}}</h1>
+      <p class="text">{{body}}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "OurStory"
+  name: "OurStory",
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    body: {
+      type: String,
+      required: true
+    },
+  }
 }
 </script>
 

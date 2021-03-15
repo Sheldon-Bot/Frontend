@@ -4,11 +4,22 @@
 
     <div class="goal-container">
       <img class="image" src ="~/assets/sheldonBotlogo.svg">
-      <Goal class="goal"></Goal>
+      <text-box1 title="The Goal" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box1>
     </div>
+
     <div class="background-container">
-      <img class="image" src ="~/assets/Background.png">
-      <Background class="background"></Background>
+      <img class="image" src ="~/assets/OCSketch.svg">
+      <text-box2 title="Our Story" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box2>
+    </div>
+
+    <div class="story-container">
+      <text-box2 title="Our Story" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box2>
+      <img class="image" src ="~/assets/OCSketch.svg">
+    </div>
+
+    <div class="final-container">
+      <img class="image" src ="~/assets/sheldonBotlogo.svg">
+      <text-box1 title="The Goal" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box1>
     </div>
 
   </div>
@@ -33,16 +44,35 @@ export default {}
   justify-content: center;
   padding-bottom: 3em;
 }
-  .background-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 3em;
-    flex-wrap: wrap;
-    padding: 3em;
+.background-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3em;
+  flex-wrap: wrap;
+  padding: 3em;
+}
 
-  }
+.story-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3em;
+  flex-wrap: wrap;
+  padding: 3em;
+}
+
+.final-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3em;
+}
 
 </style>
