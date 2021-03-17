@@ -2,15 +2,25 @@
     <div class="login">
       <div class="passcode-container">
         <h1 class="passcode">Enter Passcode</h1>
-        <input type="password" id="code" name="passcodeInput">
-        <button type="button">Login</button>
+        <input ref="passcodeInput" type="password" id="code" name="passcodeInput">
+        <button v-on:click="sendPassword()" type="button">Login</button>
       </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: "LoginForm"
+  name: "LoginForm",
+
+  methods: {
+    async sendPassword() {
+      this.$http.setHeader('Content-Type', 'application/x-www-form-urlencoded')
+      const data = await this.$http.$post('http://localhost:5001/auth', { auth: this.$refs['passcodeInput'].value })
+      console.log(data)
+      const authKey = data.code
+    }
+}
+
 }
 </script>
 
