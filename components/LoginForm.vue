@@ -15,9 +15,14 @@ export default {
   methods: {
     async sendPassword() {
       this.$http.setHeader('Content-Type', 'application/x-www-form-urlencoded')
-      const data = await this.$http.$post('http://localhost:5001/auth', { auth: this.$refs['passcodeInput'].value })
+      const data = await this.$http.$post('http://localhost:5001/auth', {auth: this.$refs['passcodeInput'].value})
+          .catch(err => {
+            console.log(err)
+          })
       console.log(data)
       const authKey = data.code
+      localStorage.setItem("authToken", authKey); //Saves auth key to local storage
+      await this.$router.push('/control')
     }
 }
 
