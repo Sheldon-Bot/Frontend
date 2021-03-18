@@ -1,6 +1,6 @@
 <template>
   <div class="camera-container">
-    <img ref="camera-out" class="camera" v-bind:src="url">
+    <img ref="camera-out" class="camera">
     <div class="text-bar">
       <h3 class="title">{{ name }}</h3>
       <h3 class="status" ref="last-update-text">{{ lastUpdate }}</h3>
@@ -29,11 +29,25 @@ export default {
     }
   },
   methods: {
-    refresh() {
+    async refresh() {
       if (process.client) {
         const imgElement = this.$refs["camera-out"];
-        imgElement.setAttribute("src", this.url + "?" + Math.random());
         const textElement = this.$refs["last-update-text"];
+
+        const authToken = localStorage.getItem('authToken')
+
+        if (!authToken) {
+          console.log("No auth token present")
+          return
+        }
+
+        const imageResponse = await this.$http.$post(this.url+"?"+Math.random(), {token: authToken})
+
+        const url = 'data:image/jpeg;base64,' + imageResponse
+
+        console.log(url)
+
+        imgElement.setAttribute("src", url);
         textElement.innerText = "Last frame: " + (Date.now() - this.lastUpdate) + "ms";
         this.lastUpdate = Date.now();
       }
@@ -45,6 +59,10 @@ export default {
   destroyed() {
     clearInterval(this.interval);
   }
+}
+
+function hexToBase64(str) {
+  return btoa(String.fromCharCode.apply(null, str.replace(/\r|\n/g, "").replace(/([\da-fA-F]{2}) ?/g, "0x$1 ").replace(/ +$/, "").split(" ")));
 }
 </script>
 
