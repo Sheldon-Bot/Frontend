@@ -59,6 +59,7 @@ export default {
   destroyed() {
     clearInterval(this.interval);
   }
+
 }
 
 function hexToBase64(str) {
@@ -70,7 +71,7 @@ function hexToBase64(str) {
 .camera {
   border-radius: 0.5em;
   padding: 0.5em;
-  max-width: 40em;
+  max-width: 20em;
 }
 .title,.status {
   display: inline;
