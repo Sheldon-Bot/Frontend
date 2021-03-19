@@ -26,7 +26,18 @@
 </template>
 
 <script>
-export default {}
+  export default{
+    head: {
+    title: 'Ribit Bot',
+    meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'The story of the Ribit Bot'
+        }
+      ],
+    }
+  }
 </script>
 
 <style>

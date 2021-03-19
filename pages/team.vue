@@ -15,7 +15,16 @@
 
 <script>
 export default {
-  name: "About"
+  head: {
+    title: 'Ribit Team',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'The team members who contributed to the creation and esign of the Ribit'
+      }
+    ]
+  },
 }
 </script>
 

@@ -11,6 +11,16 @@
 import CameraView from "~/components/CameraView";
 
 export default {
+  head: {
+    title: 'Ribit Control',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Control page of the Ribit Bot'
+      }
+    ]
+  },
   components: {
     CameraView
   },

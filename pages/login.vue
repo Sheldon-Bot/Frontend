@@ -7,7 +7,16 @@
 
 <script>
 export default {
-  name: "Login"
+  head: {
+    title: 'Ribit Login',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Login page for the Ribit control'
+      }
+    ]
+  },
 }
 </script>
 
