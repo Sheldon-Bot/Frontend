@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-    <PageHeader title="Sheldon Bot"/>
+    <PageHeader title="Ribit Bot" subtitle="Robotic Interactive, Broadcast (and) IoT Telecommunicator"/>
 
     <div class="goal-container">
       <img class="image" src ="~/assets/sheldonBotlogo.svg">
@@ -8,13 +8,13 @@
     </div>
 
     <div class="background-container">
-      <img class="image" src ="~/assets/OCSketch.svg">
+      <img class="image" src ="~/assets/OSketch.svg">
       <text-box2 title="Background" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box2>
     </div>
 
     <div class="story-container">
       <text-box2 title="Our Story" body="We set out to build a robot that would allow for students online to have a physical presence within the classroom. It was roughly inspired by the robot made by Sheldon in The Big Bang Theory."></text-box2>
-      <img class="image" src ="~/assets/OCSketch.svg">
+      <img class="image" src ="~/assets/OSketch2.svg">
     </div>
 
     <div class="final-container">

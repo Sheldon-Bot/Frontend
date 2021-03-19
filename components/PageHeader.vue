@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{title}}</h1>
+    <p>{{subtitle}}</p>
     <hr>
   </div>
 </template>
@@ -11,8 +12,12 @@ export default {
   props: {
     title: {
       type: String,
+    },
+    subtitle:{
+      type: String,
     }
   }
+
 }
 </script>
 
@@ -24,6 +29,14 @@ export default {
     color: aliceblue;
     letter-spacing: 4px;
   }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    letter-spacing: 4px;
+  }
+
   hr {
     width: 60%;
     display: block;
@@ -33,4 +46,5 @@ export default {
     border-radius: 2px;
     background-color: #35495e;
   }
+
 </style>
