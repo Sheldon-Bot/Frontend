@@ -32,7 +32,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/http'
+    '@nuxt/http',
+    'vue-web-cam/nuxt'
   ],
 
   http: {
