@@ -1,17 +1,14 @@
 <template>
   <div class="webcam-container">
-    <img ref="webcam-out" class="webcam">
+    <img src="/assets/sheldonBotlogo.svg.jpg" class="webcam">
     <div class="text-bar">
       <h3 class="title">{{ name }}</h3>
       <h3 class="status" ref="last-update-text">{{ lastUpdate }}</h3>
     </div>
   </div>
-
 </template>
 
 <script>
-
-const sendImage = document.createElement('~/assets/backendfeed.jpg')
 
 export default {
   name: "WebCamSend",
@@ -25,12 +22,15 @@ export default {
       required: true
     },
   },
+  components: {
+    //'vue-web-cam': WebCam
+  },
+
 
   async refresh(){
     if (process.client) {
-      const imageSend = this.$http.$post(this.url, {sendImage})
-    }
-
+      const imagePost = await this.$http.$post(this.url, { img: 'test' })
+      }
   }
 }
 </script>
