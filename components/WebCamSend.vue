@@ -28,8 +28,10 @@ export default {
 
 
   async refresh(){
+    const imageSend = path.resolve(path.dirname(require.main.filename), '../', 'assets', 'backendfeed.jpg')
     if (process.client) {
-      const imagePost = await this.$http.$post(this.url, { img: 'test' })
+      const imagePost = await this.$http.$post(this.url, {imageSend})
+      console.log(imagePost)
       }
   }
 }
