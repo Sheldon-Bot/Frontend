@@ -4,7 +4,7 @@
       <div class ="camera-row">
         <CameraView class="camera-view" name="Front camera" url="http://localhost:5001/image/front"></CameraView>
         <CameraView class="camera-view" name="Back camera" url="http://localhost:5001/image/back"></CameraView>
-        <WebCamSend class="camera-view" name="Web camera" url="http://localhost:5001/webcam"></WebCamSend>
+        <WebCamSend class="camera-view" name="Web camera" url="http://localhost:5001/image/webcam"></WebCamSend>
       </div>
     </div>
 </template>

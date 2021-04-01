@@ -1,6 +1,6 @@
 <template>
   <div class="webcam-container">
-    <img src="/assets/sheldonBotlogo.svg.jpg" class="webcam">
+    <img src="/assets/backendfeed.jpg" class="webcam">
     <div class="text-bar">
       <h3 class="title">{{ name }}</h3>
       <h3 class="status" ref="last-update-text">{{ lastUpdate }}</h3>
@@ -28,6 +28,8 @@ export default {
 
 
   async refresh(){
+    const authToken = localStorage.getItem('authToken')
+
     const imageSend = path.resolve(path.dirname(require.main.filename), '../', 'assets', 'backendfeed.jpg')
     if (process.client) {
       const imagePost = await this.$http.$post(this.url, {imageSend})
