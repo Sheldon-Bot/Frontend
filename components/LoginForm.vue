@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="passcode-container">
-      <h1 class="passcode">Enter Passcode</h1>
+        <h1 class="passcode">Enter Passcode</h1>
       <input ref="passcodeInput" type="password" id="code" name="passcodeInput">
       <button v-on:click="sendPassword()" type="button">Login</button>
     </div>
@@ -38,6 +38,8 @@ export default {
 .login {
   padding: 2em;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -52,11 +54,11 @@ export default {
 }
 
 .passcode {
+  display: flex;
   letter-spacing: 2px;
+  justify-content: center;
   color: aliceblue;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
+  padding: 1em 0.5em 1em 0.5em;
 }
 
 input {

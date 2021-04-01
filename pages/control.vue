@@ -43,7 +43,6 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-bottom: 0.5em;
